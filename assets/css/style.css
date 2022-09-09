@@ -570,6 +570,7 @@ h6 {
 section {
   overflow: hidden;
   padding-top: 100px;
+  padding-bottom: 70px;
 }
 
 .section-title {
