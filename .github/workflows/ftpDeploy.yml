@@ -20,4 +20,3 @@ jobs:
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_pass }}
         server-dir: /site/wwwroot/eindwerken/guus_jonah/
-        dry-run: true
