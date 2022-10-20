@@ -26,14 +26,9 @@
   <link href="./../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="./../assets/css/docstyle.css"/>
   <link href="./../assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Gp - v4.8.1
-  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -43,88 +38,193 @@
     <div class="container d-flex align-items-center justify-content-lg-between">
 
       <h1 class="logo me-auto me-lg-0"><a href="./../index.html">Ruby<span>.</span></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="./../assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <!-- <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto" href="#about">Basic</a></li>
-          <li><a class="nav-link scrollto" href="#features">Advanced</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav> -->
-
-      <a href="./../index.html" class="get-started-btn scrollto">Back to the main site.</a>
+      <a href="./../index.html" class="get-started-btn scrollto">Back</a>
 
     </div>
   </header><!-- End Header -->
 
   <main id="main">
-
-    
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="project" style="margin-top: 80px;">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="./../assets/img/keyboards/keyboard_01.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <h3>Firmware</h3>
-            <p class="fst-italic">
-              what firmware did we choose and why?
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> plug and play</li>
-              <li><i class="ri-check-double-line"></i> usb type c</li>
-              <li><i class="ri-check-double-line"></i> column staggered</li>
-              <li><i class="ri-check-double-line"></i> split</li>
-              <li><i class="ri-check-double-line"></i> thumb cluster</li>
-              <li><i class="ri-check-double-line"></i> custom layout</li>
-              <li><i class="ri-check-double-line"></i> basic shortcut keys</li>
-              <li><i class="ri-check-double-line"></i> some kind of indicator (for layers and profiles)</li>
-              <li><i class="ri-check-double-line"></i> individual addressable rgb</li>
-            </ul>
-          </div>
-
-        </div>
-
+    <div class="stackedit__left">
+      <div class="stackedit__toc">
+          <ul>
+            <li><a href="./../documentation.html">RUBY. - Documentation</a></li>
+              <li><a href="#firmware">Firmware</a>
+                  <ul>
+                      <li><a href="#qmk-or-zmk">QMK or ZMK</a>
+                          <ul>
+                              <li></li>
+                          </ul>
+                      </li>
+                      <li><a href="#then-what-is-the-difference">Then what is the difference</a></li>
+                      <li><a href="#final-decision">Final decision</a></li>
+                  </ul>
+              </li>
+          </ul>
       </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="project">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="image col-lg-6" style='background-image: url("./../assets/img/keyboards/keyboard_08.png");' data-aos="fade-right"></div>
-
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-left" data-aos-delay="100">
-              <h3>Advanced Vision</h3>
-              <p class="fst-italic">
-                A working 69% keyboard with complete customizability and flexibility added 10 key 2 rotary encoder (Ruby Deck)
-              </p>
-              <ul>
-                <li><i class="ri-check-double-line"></i> system intagrated shortcuts</li>
-                <li><i class="ri-check-double-line"></i> application spesific shortcuts</li>
-                <li><i class="ri-check-double-line"></i> gui keyboart aplication </li>
-                <li><i class="ri-check-double-line"></i> built in shortcut management</li>
-                <li><i class="ri-check-double-line"></i> save profiles</li>
-                <li><i class="ri-check-double-line"></i> gameing layout + chat switcher</li>
-                <li><i class="ri-check-double-line"></i> home row operators</li>
-                <li><i class="ri-check-double-line"></i> customizable layers (navigation, number, media, ..)</li>
-                <li><i class="ri-check-double-line"></i> macros (with mouse functionality, keyboard still usable)</li>
-                <li><i class="ri-check-double-line"></i> third party light support</li>
-              </ul>
-          </div>
-        </div>
-
+  </div>
+  <div class="stackedit__right">
+      <div class="stackedit__html">
+          <h1 id="firmware">Firmware</h1>
+          <p>We need firmware to run on our controller to be able to make it actually do something.<br> Depending on what firmware we choose, we will have to choose a matching microcontroller.<br> There already are different kinds of firmware that are specifically made for building custom keyboards.<br> We are not going to reinvent the wheel and thus will use them as our starting point.<br> There are 2 main options for what we want to do:</p>
+          <ul>
+              <li>the QMK firmware witch is the oldest and the most popular.</li>
+              <li>and the ZMK firmware witch is like its little, unrelated brother.</li>
+          </ul>
+          <h2 id="qmk-or-zmk">QMK or ZMK</h2>
+          <h4 id="what-is-qmk">What is QMK</h4>
+          <p>QMK (Quantum Mechanical Keyboard) is an open source firmware for computer input devices such as keyboards, mice, and MIDI devices.</p>
+          <h4 id="what-is-zmk">What is ZMK</h4>
+          <p>ZMK Firmware is an open source (MIT) keyboard firmware built on the Zephyr™ Project Real Time Operating System (RTOS).</p>
+          <h2 id="then-what-is-the-difference">Then what is the difference</h2>
+          <p>QMK is for all sorts of HID’s (Human Input Devices) while ZMK’s goal is to provide a modern, wireless, and powerful keyboard firmware.<br> The wireless capabilities are what essentially got us looking at the ZMK firmware, but of course, there is more to the picture.<br> But after a good look at both options, we saw a clear winner.<br> The QMK firmware is very feature rich, so much so that if I wanted to talk about them all, I would need a new keyboard…<br> But it also looks like the ZMK framework has a lot of good documentation, a growing community and common updates.<br> Here is a table displaying the features that matter the most for keyboard design.</p>
+          <p>| ✅ Supported | 🚧 Under Development | 💡 Planned |</p>
+  
+          <table>
+              <thead>
+                  <tr>
+                      <th>Feature</th>
+                      <th align="center">ZMK</th>
+                      <th align="center">QMK</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Low Latency BLE Support</td>
+                      <td align="center">✅</td>
+                      <td align="center"></td>
+                  </tr>
+                  <tr>
+                      <td>Multi-Device BLE Support</td>
+                      <td align="center">✅</td>
+                      <td align="center"></td>
+                  </tr>
+                  <tr>
+                      <td>USB Connectivity</td>
+                      <td align="center">✅</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>User Configuration Repositories</td>
+                      <td align="center">✅</td>
+                      <td align="center"></td>
+                  </tr>
+                  <tr>
+                      <td>Split Keyboard Support</td>
+                      <td align="center">✅</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>Keymaps and Layers</td>
+                      <td align="center">✅</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>Hold-Tap (which includes Mod-Tap and Layer-Tap)</td>
+                      <td align="center">✅</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>Tap-Dance</td>
+                      <td align="center">✅</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>Keyboard Codes</td>
+                      <td align="center">✅</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>Media &amp; Consumer Codes</td>
+                      <td align="center">✅</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>Encoders</td>
+                      <td align="center">✅</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>Display Support</td>
+                      <td align="center">🚧</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>RGB Underglow</td>
+                      <td align="center">✅</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>Backlight</td>
+                      <td align="center">✅</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>One Shot Keys</td>
+                      <td align="center">✅</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>Combo Keys</td>
+                      <td align="center">✅</td>
+                      <td align="center"></td>
+                  </tr>
+                  <tr>
+                      <td>Macros</td>
+                      <td align="center">✅</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>Mouse Keys</td>
+                      <td align="center">🚧</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>Low Active Power Usage</td>
+                      <td align="center">✅</td>
+                      <td align="center"></td>
+                  </tr>
+                  <tr>
+                      <td>Low Power Sleep States</td>
+                      <td align="center">✅</td>
+                      <td align="center"></td>
+                  </tr>
+                  <tr>
+                      <td>Low Power Mode (VCC Shutoff)</td>
+                      <td align="center">✅</td>
+                      <td align="center"></td>
+                  </tr>
+                  <tr>
+                      <td>Battery Reporting</td>
+                      <td align="center">✅</td>
+                      <td align="center"></td>
+                  </tr>
+                  <tr>
+                      <td>Shell over BLE</td>
+                      <td align="center">💡</td>
+                      <td align="center"></td>
+                  </tr>
+                  <tr>
+                      <td>Realtime Keymap Updating</td>
+                      <td align="center">💡</td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>AVR/8 Bit</td>
+                      <td align="center"></td>
+                      <td align="center">✅</td>
+                  </tr>
+                  <tr>
+                      <td>Wide Range of ARM Chips Supported</td>
+                      <td align="center">✅</td>
+                      <td align="center"></td>
+                  </tr>
+              </tbody>
+          </table>
+          <h2 id="final-decision">Final decision</h2>
+          <p>In the end, there was a clear winner: the ZMK firmware.<br> We choose ZMK because, even though there are a couple of features that we would like that are currently unsupported, they are already being worked on or planned. The wireless capability with the fastest implementation having less than 8ms of delay, battery efficiency and growing community together with the new and broadly available chips were also taken into account of course.</p>
+  
       </div>
-    </section><!-- End Features Section -->
-
+  </div>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
