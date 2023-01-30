@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/src/css/output.css" rel="stylesheet" />
+    </head>
+    <body class="text-primary bg-primary">
+        <nav class="text-white bg-black bg-opacity-70 font-serif p-2">
+            <div class="container mx-auto grid grid-cols-3">
+                <a href="index.html" class="font-semibold text-4xl md:h-fit my-auto col-span-1">RUBY<span class="text-ruby">.</span></a>
+                <button data-collapse-toggle="navbar-default" type="button" class="m-auto h-fit md:hidden" aria-controls="navbar-default" aria-expanded="false">
+                    <img class="w-6 h-6" aria-hidden="true" src="/assets/icons/hamburg_menu_icon.svg" alt="menu" />
+                </button>
+                <div class="flex justify-end h-fit my-auto col-span-1">
+                    <a class="p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto mr-0 ml-2 my-auto hover:transition-color ring-2 ring-ruby rounded-lg h-fit" href="projects.html">Projects</a>
+                </div>
+            </div>
+            <div class="md:visible w-full md:block md:w-auto col-auto flex flex-col" id="navbar-default">
+            <ul class="flex flex-col justify-center pb-3 mt-0 md:flex-row md:mt-0">
+                <li class="p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto"><a href="#">About</a></li>
+                <li class="p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto"><a href="#">Team</a></li>
+                <li class="p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto"><a href="#">Lorum</a></li>
+                <li class="p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto"><a href="#">Ipsum</a></li>
+            </ul>
+        </div>
+        </nav>
+
+        <script src="/src/js/main.js"></script>
+</html>

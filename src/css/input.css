@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer components {
+
+    .nav-icon {
+        @apply p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto;
+    }
+} */

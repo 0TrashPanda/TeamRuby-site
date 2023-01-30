@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10.000004mm"
+   height="10mm"
+   viewBox="0 0 10.000004 10"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="hamburg_menu_icon.svg"
+   inkscape:export-xdpi="81.279938"
+   inkscape:export-ydpi="81.279938"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1889" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-59.999998,-159.13301)">
+    <g
+       id="path350"
+       style="fill:#ffffff;fill-opacity:1">
+      <path
+         style="color:#000000;fill:#ffffff;fill-opacity:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:8.9;-inkscape-stroke:none;paint-order:stroke fill markers"
+         d="M 60.882812,166.5 A 0.88230503,0.88230503 0 0 0 60,167.38281 a 0.88230503,0.88230503 0 0 0 0.882812,0.88086 h 8.234375 A 0.88230503,0.88230503 0 0 0 70,167.38281 0.88230503,0.88230503 0 0 0 69.117187,166.5 Z"
+         id="path2812" />
+      <path
+         style="color:#000000;fill:#ffffff;fill-opacity:1;stroke-width:1.76461;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:8.9;-inkscape-stroke:none;paint-order:stroke fill markers"
+         d="m 60.882305,167.38231 h 8.235393"
+         id="path2814" />
+    </g>
+    <g
+       id="path350-6"
+       style="fill:#ffffff;fill-opacity:1">
+      <path
+         style="color:#000000;fill:#ffffff;fill-opacity:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:8.9;-inkscape-stroke:none;paint-order:stroke fill markers"
+         d="M 60.882812,163.25 A 0.88230503,0.88230503 0 0 0 60,164.13281 a 0.88230503,0.88230503 0 0 0 0.882812,0.88086 h 8.234375 A 0.88230503,0.88230503 0 0 0 70,164.13281 0.88230503,0.88230503 0 0 0 69.117187,163.25 Z"
+         id="path2818" />
+      <path
+         style="color:#000000;fill:#ffffff;fill-opacity:1;stroke-width:1.76461;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:8.9;-inkscape-stroke:none;paint-order:stroke fill markers"
+         d="m 60.882305,164.13231 h 8.235393"
+         id="path2820" />
+    </g>
+    <g
+       id="path350-6-5"
+       style="fill:#ffffff;fill-opacity:1">
+      <path
+         style="color:#000000;fill:#ffffff;fill-opacity:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:8.9;-inkscape-stroke:none;paint-order:stroke fill markers"
+         d="M 60.882812,160 A 0.88249999,0.88249999 0 0 0 60,160.88281 a 0.88249999,0.88249999 0 0 0 0.882812,0.88281 h 8.234375 A 0.88249999,0.88249999 0 0 0 70,160.88281 0.88249999,0.88249999 0 0 0 69.117187,160 Z"
+         id="path2824" />
+      <path
+         style="color:#000000;fill:#ffffff;fill-opacity:1;stroke-width:1.765;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:8.9;-inkscape-stroke:none;paint-order:stroke fill markers"
+         d="m 60.882305,160.88231 h 8.235393"
+         id="path2826" />
+    </g>
+  </g>
+</svg>
