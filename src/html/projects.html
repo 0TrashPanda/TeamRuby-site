@@ -8,68 +8,68 @@
     <body class="text-primary bg-primary">
         <nav class="text-white bg-black bg-opacity-70 font-serif p-2">
             <div class="container mx-auto grid grid-cols-3">
-                <a href="index.html" class="font-semibold text-4xl md:h-fit md:my-auto">RUBY<span class="text-ruby">.</span></a>
-                <div class="md:visible w-full md:block md:w-auto" id="navbar-default">
-                    <ul class="flex flex-col justify-center p-3 mt-0 md:flex-row md:mt-0">
-                        <!-- <li class="p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto"><a href="#">About</a></li>
-                        <li class="p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto"><a href="#">Team</a></li>
-                        <li class="p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto"><a href="#">Lorum</a></li>
-                        <li class="p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto"><a href="#">Ipsum</a></li> -->
-                    </ul>
-                </div>
-                <div class="flex justify-end h-fit md:my-auto">
-                    <!-- <button data-collapse-toggle="navbar-default" type="button" class="p-2 mx-2 h-fit md:hidden focus:ring-2 ring-inset focus:ring-secondary focus:rounded-lg" aria-controls="navbar-default" aria-expanded="false">
-                        <img class="w-6 h-6" aria-hidden="true" src="/assets/icons/hamburg_menu_icon.svg" alt="menu" />
-                    </button> -->
+                <a href="index.html" class="font-semibold text-4xl md:h-fit my-auto col-span-1">RUBY<span class="text-ruby">.</span></a>
+                <button data-collapse-toggle="navbar-default" type="button" class="m-auto h-fit md:hidden" aria-controls="navbar-default" aria-expanded="false">
+                    <img class="w-6 h-6" aria-hidden="true" src="/assets/icons/hamburg_menu_icon.svg" alt="menu" />
+                </button>
+                <div class="flex justify-end h-fit my-auto col-span-1">
                     <a class="p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto mr-0 ml-2 my-auto hover:transition-color ring-2 ring-ruby rounded-lg h-fit" href="projects.html">Projects</a>
                 </div>
-                </div>
-            </nav>
-            <main>
-            <div class="container flex flex-wrap m-auto mt-6 justify-center">
-                <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
-                        <a href="#">
-                            <img src="/projects/ruby_board/assets/thumbnail.jpg" alt="">
-                            <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">Ruby Board</h1>
-                            <p class="px-2 pb-2 text-secondary font-sans">very good keyboard, yes yes very nice</p>
-                        </a>
-                    </div>
-                    <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
-                        <a href="#">
-                            <img src="/projects/test_1/assets/thumbnail.jpg" alt="">
-                            <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">Astolfo</h1>
-                            <p class="px-2 pb-2 text-secondary font-sans">very big ****</p>
-                        </a>
-                    </div>
-                    <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
-                        <a href="#">
-                            <img src="/projects/test_5/assets/thumbnail.jpg" alt="">
-                            <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">Lisa Lisa</h1>
-                            <p class="px-2 pb-2 text-secondary font-sans">Lisa Lisa (リサリサ Risa Risa), full name Elizabeth Joestar (エリザベス・ジョースター Erizabesu Jōsutā), is a primary ally featured in the second part of the JoJo's Bizarre Adventure series.</p>
-                        </a>
-                    </div>
-                    <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
-                        <a href="#">
-                            <img src="/projects/test_2/assets/thumbnail.jpg" alt="">
-                            <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">SUS</h1>
-                            <p class="px-2 pb-2 text-secondary font-sans">susy amongus</p>
-                        </a>
-                    </div>
-                    <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
-                        <a href="#">
-                            <img src="/projects/test_3/assets/thumbnail.jpg" alt="">
-                            <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">Hideri Kanzaki</h1>
-                            <p class="px-2 pb-2 text-secondary font-sans">Hideri Kanzaki is a major protagonist in the yonkoma manga and anime series Blend S. As a crossdresser, he took role in Cafe Stile as an idol. He is voiced by Sora Tokui</p>
-                        </a>
-                    </div>
-                    <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
-                        <a href="#">
-                        <img src="/projects/test_4/assets/thumbnail.jpg" alt="">
-                        <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">Astolfo</h1>
-                        <p class="px-2 pb-2 text-secondary font-sans">Astolfo is a fictional character in the Matter of France where he is one of Charlemagne's paladins. He is the son of Otto, the King of England, and is a cousin to Orlando and Rinaldo, and a descendant of Charles Martel. </p>
-                    </a>
-                    </div>
             </div>
-        </main>
+            <div class="md:visible w-full md:block md:w-auto col-auto flex flex-col" id="navbar-default">
+                <ul class="flex flex-col justify-center pb-3 mt-0 md:flex-row md:mt-0">
+                    <li class="p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto"><a href="#">About</a></li>
+                    <li class="p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto"><a href="#">Team</a></li>
+                    <li class="p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto"><a href="#">Lorum</a></li>
+                    <li class="p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto"><a href="#">Ipsum</a></li>
+                </ul>
+            </div>
+        </nav>
+            <main>
+                <div class="container flex flex-wrap m-auto mt-6 justify-center">
+                    <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md center">
+                            <a href="#">
+                                <img src="/projects/ruby_board/assets/thumbnail.jpg" alt="">
+                                <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">Ruby Board</h1>
+                                <p class="px-2 pb-2 text-secondary font-sans">very good keyboard, yes yes very nice</p>
+                            </a>
+                        </div>
+                        <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
+                            <a href="#">
+                                <img src="/projects/test_1/assets/thumbnail.jpg" alt="">
+                                <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">Astolfo</h1>
+                                <p class="px-2 pb-2 text-secondary font-sans">very big ****</p>
+                            </a>
+                        </div>
+                        <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
+                            <a href="#">
+                                <img src="/projects/test_5/assets/thumbnail.jpg" alt="">
+                                <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">Lisa Lisa</h1>
+                                <p class="px-2 pb-2 text-secondary font-sans">Lisa Lisa (リサリサ Risa Risa), full name Elizabeth Joestar (エリザベス・ジョースター Erizabesu Jōsutā), is a primary ally featured in the second part of the JoJo's Bizarre Adventure series.</p>
+                            </a>
+                        </div>
+                        <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
+                            <a href="#">
+                                <img src="/projects/test_2/assets/thumbnail.jpg" alt="">
+                                <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">SUS</h1>
+                                <p class="px-2 pb-2 text-secondary font-sans">susy amongus</p>
+                            </a>
+                        </div>
+                        <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
+                            <a href="#">
+                                <img src="/projects/test_3/assets/thumbnail.jpg" alt="">
+                                <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">Hideri Kanzaki</h1>
+                                <p class="px-2 pb-2 text-secondary font-sans">Hideri Kanzaki is a major protagonist in the yonkoma manga and anime series Blend S. As a crossdresser, he took role in Cafe Stile as an idol. He is voiced by Sora Tokui</p>
+                            </a>
+                        </div>
+                        <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
+                            <a href="#">
+                            <img src="/projects/test_4/assets/thumbnail.jpg" alt="">
+                            <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">Astolfo</h1>
+                            <p class="px-2 pb-2 text-secondary font-sans">Astolfo is a fictional character in the Matter of France where he is one of Charlemagne's paladins. He is the son of Otto, the King of England, and is a cousin to Orlando and Rinaldo, and a descendant of Charles Martel. </p>
+                        </a>
+                        </div>
+                </div>
+            </main>
         <script src="/src/js/main.js"></script>
 </html>

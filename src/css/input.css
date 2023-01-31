@@ -8,3 +8,18 @@
         @apply p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto;
     }
 } */
+
+#expandButton {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#arrow {
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+#expandButton.expanded #arrow {
+    transform: rotate(0.5turn);
+}
