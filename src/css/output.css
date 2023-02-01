@@ -547,8 +547,8 @@ video {
   }
 }
 
-.collapse {
-  visibility: collapse;
+.relative {
+  position: relative;
 }
 
 .col-span-1 {
@@ -561,6 +561,10 @@ video {
 
 .m-auto {
   margin: auto;
+}
+
+.m-4 {
+  margin: 1rem;
 }
 
 .m-2 {
@@ -601,6 +605,10 @@ video {
   display: grid;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -629,6 +637,10 @@ video {
 
 .max-w-\[20rem\] {
   max-width: 20rem;
+}
+
+.origin-top {
+  transform-origin: top;
 }
 
 .grid-cols-3 {
@@ -695,6 +707,16 @@ video {
   padding-right: 0.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -719,6 +741,15 @@ video {
   font-family: Open Sans;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -727,6 +758,10 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-semibold {
@@ -768,16 +803,37 @@ video {
   --tw-ring-color: rgb(224 17 95 / var(--tw-ring-opacity));
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
 
-/* @layer components {
+.nav-icon {
+  margin: auto;
+  height: 3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  vertical-align: middle;
+  transition-duration: 300ms;
+}
 
-    .nav-icon {
-        @apply p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto;
-    }
-} */
+@media (min-width: 768px) {
+  .nav-icon {
+    margin: 0.5rem;
+  }
+}
+
+.nav-icon:hover {
+  --tw-text-opacity: 1;
+  color: rgb(224 17 95 / var(--tw-text-opacity));
+}
 
 #expandButton {
   border: none;
@@ -794,6 +850,12 @@ video {
   transform: rotate(0.5turn);
 }
 
+.nav-hidden {
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:text-ruby:hover {
   --tw-text-opacity: 1;
   color: rgb(224 17 95 / var(--tw-text-opacity));
@@ -807,6 +869,39 @@ video {
 @media (min-width: 768px) {
   .md\:visible {
     visibility: visible;
+  }
+
+  .md\:collapse {
+    visibility: collapse;
+  }
+
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:top-0 {
+    top: 0px;
+  }
+
+  .md\:left-0 {
+    left: 0px;
+  }
+
+  .md\:right-0 {
+    right: 0px;
+  }
+
+  .md\:left-auto {
+    left: auto;
+  }
+
+  .md\:m-auto {
+    margin: auto;
+  }
+
+  .md\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .md\:mt-0 {
@@ -826,11 +921,29 @@ video {
     height: fit-content;
   }
 
+  .md\:h-16 {
+    height: 4rem;
+  }
+
   .md\:w-auto {
     width: auto;
   }
 
+  .md\:\!scale-\[1\] {
+    --tw-scale-x: 1 !important;
+    --tw-scale-y: 1 !important;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:bg-transparent {
+    background-color: #00000000;
+  }
+
+  .md\:p-0 {
+    padding: 0px;
   }
 }

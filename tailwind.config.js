@@ -11,6 +11,7 @@ module.exports = {
       secondary: '#aaaaaa',
     },
     backgroundColor: {
+      transparent: '#00000000',
       black: '#000000',
       primary: '#1D1F23'
     },

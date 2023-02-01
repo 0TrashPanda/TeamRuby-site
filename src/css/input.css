@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer components {
+.nav-icon {
+    @apply py-2 px-2 md:m-2 duration-300 w-fit h-12 m-auto align-middle;
+}
 
-    .nav-icon {
-        @apply p-1 hover:text-ruby hover:transition-color duration-300 w-fit m-auto;
-    }
-} */
+.nav-icon:hover {
+    @apply text-ruby;
+}
+
+
 
 #expandButton {
     border: none;
@@ -22,4 +25,8 @@
 
 #expandButton.expanded #arrow {
     transform: rotate(0.5turn);
+}
+
+.nav-hidden {
+    @apply scale-0;
 }
