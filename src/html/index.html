@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="/src/css/output.css" rel="stylesheet" />
     </head>
-    <body class="text-primary bg-primary">
-        <nav class="text-white font-serif relative font-medium text-xl">
-            <div class="bg-black bg-opacity-70">
+    <body class="text-primary bg-primary h-screen flex flex-col">
+        <nav class="text-white font-serif sticky top-0 z-50 font-medium text-xl flex-grow-0 shrink-0 basis-auto">
+            <div class="bg-black bg-opacity-80">
                 <div class="container px-2 mx-auto grid grid-cols-3 duration-200">
                     <a href="index.html" class="font-semibold text-[2rem] md:h-fit my-auto col-span-1">RUBY<span class="text-ruby">.</span></a>
                     <button id="expandButton" data-collapse-toggle="navbar-default" type="button" class="collapsed m-auto h-16 md:collapse focus:text-ruby" aria-controls="navbar-default" aria-expanded="false">
@@ -29,6 +29,15 @@
                 </ul>
             </div>
         </nav>
+        <main class="relative flex-grow-1 shrink-1 basis-auto ">
+            <div class="container mx-auto duration-200">
+                <section class="" id="start">
+                    <img class="mx-auto mb-8 md:mb-16 h-48 md:h-96" src="/assets/logo's/RUBY logo thicc.png" alt="RUBY logo">
+                    <h1 class="font-Poppins text-6xl md:text-8xl mx-auto w-fit">RUBY</h1>
+                    <h2 class="font-Poppins text-2xl md:text-4xl mx-auto w-fit mt-12 text-center">We are a team of two talented engineers.</h2>
+                </section>
+            </div>
+        </main>
 
         <script src="/src/js/main.js"></script>
 </html>

@@ -551,6 +551,18 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -577,20 +589,20 @@ video {
   margin-bottom: auto;
 }
 
-.ml-auto {
-  margin-left: auto;
+.mr-0 {
+  margin-right: 0px;
 }
 
-.\!mr-0 {
-  margin-right: 0px !important;
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mr-0 {
-  margin-right: 0px;
 }
 
 .flex {
@@ -599,6 +611,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .h-16 {
@@ -610,9 +626,8 @@ video {
   height: fit-content;
 }
 
-.\!h-fit {
-  height: -moz-fit-content !important;
-  height: fit-content !important;
+.h-48 {
+  height: 12rem;
 }
 
 .w-fit {
@@ -626,6 +641,18 @@ video {
 
 .max-w-\[20rem\] {
   max-width: 20rem;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.basis-auto {
+  flex-basis: auto;
 }
 
 .origin-top {
@@ -679,20 +706,20 @@ video {
   background-color: rgb(21 21 21 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-80 {
+  --tw-bg-opacity: 0.8;
+}
+
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
 }
 
-.\!p-1 {
-  padding: 0.25rem !important;
+.p-1 {
+  padding: 0.25rem;
 }
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .px-2 {
@@ -718,8 +745,16 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-serif {
   font-family: "Open Sans", sans-serif;
+}
+
+.font-Poppins {
+  font-family: "Poppins", sans-serif;
 }
 
 .font-Raleway {
@@ -737,6 +772,16 @@ video {
 
 .text-\[2rem\] {
   font-size: 2rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-lg {
@@ -888,6 +933,10 @@ video {
     margin-bottom: auto;
   }
 
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .md\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
@@ -895,6 +944,10 @@ video {
 
   .md\:h-16 {
     height: 4rem;
+  }
+
+  .md\:h-96 {
+    height: 24rem;
   }
 
   .md\:\!scale-\[1\] {
@@ -913,5 +966,15 @@ video {
 
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
