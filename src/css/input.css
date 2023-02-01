@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 .nav-icon {
-    @apply py-2 px-2 md:m-2 duration-300 w-fit h-12 m-auto align-middle;
+    @apply py-2 px-2 md:m-2 duration-300 w-fit h-12 m-auto;
+    line-height: 2rem;
 }
 
 .nav-icon:hover {

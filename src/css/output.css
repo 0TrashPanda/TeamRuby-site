@@ -820,7 +820,6 @@ video {
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  vertical-align: middle;
   transition-duration: 300ms;
 }
 
@@ -828,6 +827,10 @@ video {
   .nav-icon {
     margin: 0.5rem;
   }
+}
+
+.nav-icon {
+  line-height: 2rem;
 }
 
 .nav-icon:hover {
