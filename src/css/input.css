@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav-icon {
-    @apply py-2 px-2 md:m-2 duration-300 w-fit h-12 m-auto;
+.nav-item {
+    @apply p-2 w-fit h-12 m-auto duration-300 md:m-2;
     line-height: 2rem;
 }
 
-.nav-icon:hover {
+.nav-item:hover {
     @apply text-ruby;
 }
 
