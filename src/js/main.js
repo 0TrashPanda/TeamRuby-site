@@ -1,18 +1,12 @@
-const button = document.querySelector("button[data-collapse-toggle='navbar-default']");
+const expandButton = document.querySelector("#expandButton");
 const navbar = document.getElementById("navbar-default");
-button.addEventListener("click", function() {
+
+expandButton.addEventListener("click", function() {
   navbar.classList.toggle("nav-hidden");
+  this.classList.toggle("collapsed");
 });
 
-const expandButton = document.querySelector("#expandButton");
-
-// expandButton.addEventListener("click", function () {
-//   this.classList.toggle("expanded");
-// });
-
-expandButton.onfocus = function () {
-  this.classList.edd("expanded");
-}
-expandButton.onfocusout = function () {
-  this.classList.remove("expanded");
-}
+expandButton.addEventListener("focusout", function() {
+  this.classList.add("collapsed");
+  navbar.classList.add("nav-hidden");
+});

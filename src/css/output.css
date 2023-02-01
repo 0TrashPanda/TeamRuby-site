@@ -555,10 +555,6 @@ video {
   grid-column: span 1 / span 1;
 }
 
-.col-auto {
-  grid-column: auto;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -581,16 +577,20 @@ video {
   margin-bottom: auto;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.\!mr-0 {
+  margin-right: 0px !important;
+}
+
 .mr-0 {
   margin-right: 0px;
 }
 
 .ml-2 {
   margin-left: 0.5rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
 }
 
 .mt-6 {
@@ -614,21 +614,9 @@ video {
   height: fit-content;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .min-w-\[10rem\] {
@@ -698,10 +686,6 @@ video {
   padding: 0.5rem;
 }
 
-.p-1 {
-  padding: 0.25rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -715,10 +699,6 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem;
 }
 
 .pb-1 {
@@ -748,11 +728,6 @@ video {
 
 .text-\[2rem\] {
   font-size: 2rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-lg {
@@ -807,10 +782,6 @@ video {
   transition-duration: 200ms;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
-}
-
 .nav-icon {
   margin: auto;
   height: 3rem;
@@ -849,7 +820,7 @@ video {
   transform-origin: center;
 }
 
-#expandButton.expanded #arrow {
+#expandButton.collapsed #arrow {
   transform: rotate(0.5turn);
 }
 
@@ -859,21 +830,12 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:text-ruby:hover {
-  --tw-text-opacity: 1;
-  color: rgb(224 17 95 / var(--tw-text-opacity));
-}
-
 .focus\:text-ruby:focus {
   --tw-text-opacity: 1;
   color: rgb(224 17 95 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible;
-  }
-
   .md\:collapse {
     visibility: collapse;
   }
@@ -907,18 +869,6 @@ video {
     margin-bottom: auto;
   }
 
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .md\:block {
-    display: block;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
@@ -926,10 +876,6 @@ video {
 
   .md\:h-16 {
     height: 4rem;
-  }
-
-  .md\:w-auto {
-    width: auto;
   }
 
   .md\:\!scale-\[1\] {
