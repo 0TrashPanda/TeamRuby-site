@@ -29,5 +29,18 @@
 }
 
 .nav-hidden {
-    @apply scale-0;
+    @apply scale-0 mt-0 h-0 duration-200;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    display: inline-block;
+    background: #FF307E;
+    margin: 4px 10px;
+}
+
+.active {
+    @apply text-ruby;
 }
