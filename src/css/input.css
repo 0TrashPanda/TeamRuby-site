@@ -39,6 +39,7 @@
     display: inline-block;
     background: #FF307E;
     margin: 4px 10px;
+    @apply md:my-2
 }
 
 .active {

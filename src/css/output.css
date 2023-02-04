@@ -613,6 +613,10 @@ video {
   margin-top: 5rem;
 }
 
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -623,6 +627,10 @@ video {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-1 {
@@ -639,6 +647,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.h-0 {
+  height: 0px;
 }
 
 .h-16 {
@@ -658,8 +670,8 @@ video {
   height: 40vh;
 }
 
-.h-0 {
-  height: 0px;
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-fit {
@@ -673,18 +685,6 @@ video {
 
 .max-w-\[20rem\] {
   max-width: 20rem;
-}
-
-.shrink-0 {
-  flex-shrink: 0;
-}
-
-.flex-grow-0 {
-  flex-grow: 0;
-}
-
-.basis-auto {
-  flex-basis: auto;
 }
 
 .origin-top {
@@ -709,6 +709,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .overflow-auto {
@@ -773,9 +777,9 @@ video {
   padding-right: 2rem;
 }
 
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-4 {
@@ -783,13 +787,12 @@ video {
   padding-right: 1rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .pb-1 {
@@ -798,6 +801,10 @@ video {
 
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-center {
@@ -962,7 +969,14 @@ video {
   height: 2px;
   display: inline-block;
   background: #FF307E;
-  margin: 4px 10px;
+  margin: 4px 10px
+}
+
+@media (min-width: 768px) {
+  .section-title h2::after {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .active {
@@ -1051,10 +1065,6 @@ video {
 
   .md\:p-0 {
     padding: 0px;
-  }
-
-  .md\:pt-24 {
-    padding-top: 6rem;
   }
 
   .md\:text-8xl {
