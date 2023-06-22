@@ -990,6 +990,10 @@ video {
   transition-duration: 75ms;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .nav-item {
   margin: auto;
   height: 3rem;

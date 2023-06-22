@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .nav-item {
     @apply p-2 w-fit h-12 m-auto duration-300 md:m-2;
     line-height: 2rem;
