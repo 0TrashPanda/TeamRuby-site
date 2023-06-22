@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: 'production',
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}","./projects/**/*.{html,js}"],
   theme: {
     colors: {
       white: '#ffffff',
@@ -9,6 +9,7 @@ module.exports = {
       ruby: '#e0115f',
       primary: '#d5d5d5',
       secondary: '#aaaaaa',
+      bg: '#1D1F23',
     },
     backgroundColor: {
       transparent: '#00000000',
