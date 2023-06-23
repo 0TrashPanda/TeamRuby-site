@@ -1,93 +1,119 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="/src/css/output.css" rel="stylesheet" />
-    </head>
-    <body class="text-primary bg-primary">
-        <nav class="text-white font-serif sticky top-0 z-50 font-medium text-xl h-0">
-            <div class="bg-black bg-opacity-80" id="navbar_full">
-                <div class="container px-3 mx-auto grid grid-cols-3 duration-200">
-                    <a href="/src/html/index.html" class="font-semibold text-[2rem] md:h-fit my-auto col-span-1">RUBY<span class="text-ruby">.</span></a>
-                    <button id="expandButton" data-collapse-toggle="navbar-default" type="button" class="collapsed m-auto h-16 md:collapse focus:text-ruby" aria-controls="navbar-default" aria-expanded="false">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" shape-rendering="geometricPrecision" style="border-radius: 50%">
-                            <path id="arrow" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                        </svg>
-                    </button>
-                    <div class="flex justify-end h-fit my-auto col-span-1">
-                        <a class="m-auto mr-0 p-1 ring-2 ring-ruby rounded-lg duration-300 hover:text-ruby" href="/src/html/projects.html">Projects</a>
-                    </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/css/output.css" rel="stylesheet" />
+</head>
+
+<body class="text-primary bg-primary">
+    <nav class="text-white font-serif sticky top-0 z-50 font-medium text-xl h-0">
+        <div class="bg-black bg-opacity-80" id="navbar_full">
+            <div class="container px-3 mx-auto grid grid-cols-3 duration-200">
+                <a href="/src/html/index.html" class="font-semibold text-[2rem] md:h-fit my-auto col-span-1">RUBY<span
+                        class="text-ruby">.</span></a>
+                <button id="expandButton" data-collapse-toggle="navbar-default" type="button"
+                    class="collapsed m-auto h-16 md:collapse focus:text-ruby" aria-controls="navbar-default"
+                    aria-expanded="false">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"
+                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                        shape-rendering="geometricPrecision" style="border-radius: 50%">
+                        <path id="arrow" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                    </svg>
+                </button>
+                <div class="flex justify-end h-fit my-auto col-span-1">
+                    <a class="m-auto mr-0 p-1 ring-2 ring-ruby rounded-lg duration-300 hover:text-ruby"
+                        href="/src/html/projects.html">Projects</a>
                 </div>
             </div>
-            <div class="nav-hidden py-4 px-8 mt-20 bg-black bg-opacity-80 m-4 w-fit mx-auto rounded-lg origin-top duration-200 delay-75 md:bg-transparent md:absolute md:top-0 md:m-auto md:p-0 md:left-0 md:right-0 md:!scale-[1]" id="navbar-default">
-                <ul class="flex flex-col justify-center md:flex-row md:my-auto md:h-16 md:left-auto md:right-auto">
-                </ul>
-            </div>
-        </nav>
-        <div>
-            <img class="object-cover h-screen w-screen bg-black" src="./assets/keyboard dender 23.png" alt="keyboard">
-            <div class="absolute top-1/3 w-full text-center">
-                <h1 class="text-9xl text-bg font-bold font-serif capitalize tracking-[1rem]">RUBY BOARD</h1><br>
-                <span class="text-3xl text-bg font-bold font-serif capitalize tracking-widest">Guus - Jonah</span>
-            </div>
         </div>
-        <main>
-            <div class="container mx-auto mt-24">
-                <section id="template" class="my-12">
-                    <div class="m-2 flex">
-                        <div class="w-1/2 m-8">
-                            <h1 class="text-white font-Poppins uppercase font-bold text-2xl md:text-4xl">The board</h1>
-                            <p class="font-serif text-secondary text-base md:text-xl">
-                                Introducing the Ruby board, a custom-made keyboard designed with ergonomics and efficiency in mind.
-                                The Ruby Keyboard boasts a unique layout based on the popular Colemak design,
-                                which has been shown to improve typing speed and reduce strain on the fingers and wrists.
-                                With a split configuration, the Ruby Keyboard allows for a comfortable,
-                                natural typing position that reduces the risk of repetitive strain injuries.
-                                We understand that a keyboard is more than just a tool for typing.
-                                It's an essential component of your work environment. It's about efficiency and optimization.
-                                Whether you're a gamer, a programmer, or just someone who spends a lot of time typing, the Ruby Keyboard is the perfect tool.
-                            </p>
-                        </div>
-                        <img class="object-cover w-1/2 h-1/2" src="./assets/keyboard dender 23.png" alt="">
+        <div class="nav-hidden py-4 px-8 mt-20 bg-black bg-opacity-80 m-4 w-fit mx-auto rounded-lg origin-top duration-200 delay-75 md:bg-transparent md:absolute md:top-0 md:m-auto md:p-0 md:left-0 md:right-0 md:!scale-[1]"
+            id="navbar-default">
+            <ul class="flex flex-col justify-center md:flex-row md:my-auto md:h-16 md:left-auto md:right-auto">
+                <li class="nav-item"><a href="#the-board">The board</a></li>
+                <li class="nav-item"><a href="#modularity">Modularity</a></li>
+                <li class="nav-item"><a href="#documentation-teaser">Documentation Teaser</a></li>
+                <li class="nav-item">|</li>
+                <li class="nav-item"><a href="./documentation.html">Documentation</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <img class="object-cover h-screen w-screen bg-black" src="./assets/keyboard dender 23.png" alt="keyboard">
+        <div class="absolute top-1/3 w-full text-center">
+            <h1 class="text-9xl text-bg font-bold font-serif capitalize tracking-[1rem]">RUBY BOARD</h1><br>
+            <span class="text-3xl text-bg font-bold font-serif capitalize tracking-widest">Guus - Jonah</span>
+        </div>
+    </div>
+    <main>
+        <div class="container mx-auto mt-12">
+            <section id="the-board" class="pt-16 pb-8">
+                <div class="m-2 flex">
+                    <div class="w-1/2 m-8">
+                        <h1 class="text-white font-Poppins uppercase font-bold text-2xl md:text-4xl">The board</h1>
+                        <p class="font-serif text-secondary text-base md:text-xl">
+                            Introducing the Ruby board, a custom-made keyboard designed with ergonomics and efficiency
+                            in mind.
+                            The Ruby Keyboard boasts a unique layout based on the popular Colemak design,
+                            which has been shown to improve typing speed and reduce strain on the fingers and wrists.
+                            With a split configuration, the Ruby Keyboard allows for a comfortable,
+                            natural typing position that reduces the risk of repetitive strain injuries.
+                            We understand that a keyboard is more than just a tool for typing.
+                            It's an essential component of your work environment. It's about efficiency and
+                            optimization.
+                            Whether you're a gamer, a programmer, or just someone who spends a lot of time typing, the
+                            Ruby Keyboard is the perfect tool.
+                        </p>
                     </div>
-                </section>
-                <section id="template2" class="my-12">
-                    <div class="m-2 flex flex-row-reverse">
-                        <div class="w-1/2 m-8 float-left">
-                            <h1 class="text-white font-Poppins uppercase font-bold text-2xl md:text-4xl">Modularity</h1>
-                            <p class="font-serif text-secondary text-base md:text-xl">
-                                One of the standout features of the Ruby Keyboard is its modular design. The keyboard is designed with a master-slave configuration,
-                                which means that it can be easily expanded with additional modules like a numpad or media pad.
-                                This allows you to customize your workspace to suit your specific needs and preferences, without sacrificing comfort or functionality.
+                    <img class="object-cover w-1/2 h-1/2" src="./assets/keyboard dender 23.png" alt="">
+                </div>
+            </section>
+            <section id="modularity" class="pt-16 pb-8">
+                <div class="m-2 flex flex-row-reverse">
+                    <div class="w-1/2 m-8 float-left">
+                        <h1 class="text-white font-Poppins uppercase font-bold text-2xl md:text-4xl">Modularity</h1>
+                        <p class="font-serif text-secondary text-base md:text-xl">
+                            One of the standout features of the Ruby Keyboard is its modular design. The keyboard is
+                            designed with a master-slave configuration,
+                            which means that it can be easily expanded with additional modules like a numpad or media
+                            pad.
+                            This allows you to customize your workspace to suit your specific needs and preferences,
+                            without sacrificing comfort or functionality.
 
-                            </p>
-                        </div>
-                        <img class="object-cover w-1/2 h-1/2" src="./assets/keyboard dender 23.png" alt="">
+                        </p>
                     </div>
-                </section>
-                <section id="template3" class="my-12">
-                    <div class="m-2 flex flex-col">
-                        <div class="m-8">
-                            <h1 class="text-white font-Poppins uppercase font-bold text-2xl md:text-4xl">Documentation Teaser</h1>
-                            <p class="font-serif text-secondary text-base md:text-xl">
-                                In our quest to challenge the long-standing restrictions imposed by traditional typewriters,
-                                we embarked on the creation of a custom keyboard that breaks free from conventional design norms.
-                                Our vision materialized into a split ortholinear column-staggered ergonomic keyboard, equipped with a thumb cluster and shortcut keys.
-                                Using primarily from the Colemak layout, we developed a modified 69% layout that optimizes key placement for enhanced typing efficiency.
-                                <br><br>
-                                Our shared passion for computers and coding fueled our motivation to embark on this project.
-                                Recognizing the significant amount of time we spend on our computers and the importance of comfortable typing experiences,
-                                we set out to create a keyboard tailored to our specific needs.
-                                Moreover, the inherent intrigue and challenge of the project enticed us to dive into the realm of keyboard design and customization.
-                                <br><br>
-                                Read more about our journey in <a href="./documentation.html">the documentation</a>.
-                            </p>
-                        </div>
-                        <img class="" src="./assets/keyboard dender 23.png" alt="">
+                    <img class="object-cover w-1/2 h-1/2" src="./assets/keyboard dender 23.png" alt="">
+                </div>
+            </section>
+            <section id="documentation-teaser" class="pt-16 pb-8">
+                <div class="m-2 flex flex-col">
+                    <div class="m-8">
+                        <h1 class="text-white font-Poppins uppercase font-bold text-2xl md:text-4xl">Documentation Teaser</h1>
+                        <p class="font-serif text-secondary text-base md:text-xl">
+                            In our quest to challenge the long-standing restrictions imposed by traditional typewriters,
+                            we embarked on the creation of a custom keyboard that breaks free from conventional design
+                            norms.
+                            Our vision materialized into a split ortholinear column-staggered ergonomic keyboard,
+                            equipped with a thumb cluster and shortcut keys.
+                            Using primarily from the Colemak layout, we developed a modified 69% layout that optimizes
+                            key placement for enhanced typing efficiency.
+                            <br><br>
+                            Our shared passion for computers and coding fueled our motivation to embark on this project.
+                            Recognizing the significant amount of time we spend on our computers and the importance of
+                            comfortable typing experiences,
+                            we set out to create a keyboard tailored to our specific needs.
+                            Moreover, the inherent intrigue and challenge of the project enticed us to dive into the
+                            realm of keyboard design and customization.
+                            <br><br>
+                            Read more about our journey in <a href="./documentation.html">the documentation</a>.
+                        </p>
                     </div>
-                </section>
-            </div>
-        </main>
+                    <img class="" src="./assets/keyboard dender 23.png" alt="">
+                </div>
+            </section>
+        </div>
+    </main>
     <script src="/src/js/main.js"></script>
+
 </html>
