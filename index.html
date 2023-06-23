@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/src/css/output.css" rel="stylesheet" />
+    </head>
+    <body class="text-primary bg-primary">
+        <nav class="text-white font-serif sticky top-0 z-50 font-medium text-xl h-0">
+            <div class="bg-black bg-opacity-80" id="navbar_full">
+                <div class="container px-3 mx-auto grid grid-cols-3 duration-200">
+                    <a href="#" class="font-semibold text-[2rem] md:h-fit my-auto col-span-1">RUBY<span class="text-ruby">.</span></a>
+                    <button id="expandButton" data-collapse-toggle="navbar-default" type="button" class="collapsed m-auto h-16 md:collapse focus:text-ruby" aria-controls="navbar-default" aria-expanded="false">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" shape-rendering="geometricPrecision" style="border-radius: 50%">
+                            <path id="arrow" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                        </svg>
+                    </button>
+                    <div class="flex justify-end h-fit my-auto col-span-1">
+                        <a class="m-auto mr-0 p-1 ring-2 ring-ruby rounded-lg duration-300 hover:text-ruby" href="/src/html/projects.html">Projects</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-hidden py-4 px-8 mt-20 bg-black bg-opacity-80 m-4 w-fit mx-auto rounded-lg origin-top duration-200 delay-75 md:bg-transparent md:absolute md:top-0 md:m-auto md:p-0 md:left-0 md:right-0 md:!scale-[1]" id="navbar-default">
+                <ul class="flex flex-col justify-center md:flex-row md:my-auto md:h-16 md:left-auto md:right-auto">
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#team">Team</a></li>
+                    <li class="nav-item"><a href="#news">News</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <img class="object-cover h-screen w-screen bg-black" src="https://images.unsplash.com/photo-1524234107056-1c1f48f64ab8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="keybord">
+            <div class="absolute top-[10%] w-full text-center">
+                <img class="mx-auto mb-6 md:mb-8 h-[40vh] md:h-96" src="/assets/logo's/RUBY logo thicc.png" alt="RUBY logo">
+                <h1 class="text-9xl text-primary font-bold font-serif capitalize tracking-[1rem]">TEAM RUBY</h1><br>
+                <span class="text-3xl text-primary font-bold font-serif capitalize tracking-widest">guus - jonah</span>
+                    <a href="#about" class="absolute top-[120%] left-0 right-0 mx-auto w-16 "><img src="/assets/icons/down-arrow.png" alt="⌄"></a>
+            </div>
+        </div>
+        <main class="mb-32">
+            <div class="container mx-auto duration-200 px-2 relative top-0">
+                <section class="pt-24" id="about">
+                    <div class="section-title mb-4">
+                        <h2 class="text-secondary font-Poppins uppercase mb-1 md:text-2xl" >About</h2>
+                        <p class="text-white font-Poppins uppercase font-bold text-2xl md:text-4xl" >we are team of talent</p>
+                    </div>
+                    <p class="font-serif text-secondary text-base md:text-xl" >Welcome to Team Ruby's website! We are a group of tech enthusiasts who love creating innovative and useful gadgets that can make your daily life easier and more exciting. Our mission is to inspire you to see things from a new perspective and encourage you to explore the possibilities of technology.</p>
+                    <br>
+                    <br>
+                    <p class="font-serif text-secondary text-base md:text-xl" >Our team is passionate about designing and building unique projects that solve real-life problems. Whether it's a custom ergonomic split column staggered keyboard or a streamdeck like board, we strive to make our creations intuitive and user-friendly. With a focus on functionality and aesthetics, we aim to change the way you interact with technology.</p>
+                    <br>
+                    <p class="font-serif text-secondary text-base md:text-xl" >On this website, you will find a showcase of our current projects and prototypes, as well as news and updates on the latest tech trends. We believe that sharing our ideas and experiences with the community is essential for fostering innovation and growth. We hope to inspire you to join us on our journey of exploring the endless possibilities of technology. So, sit back, relax, and explore the exciting world of Team Ruby!</p>
+                </section>
+                <section class="pt-20" id="team">
+                    <div class="section-title mb-4">
+                        <h2 class="text-secondary font-Poppins uppercase mb-1 md:text-2xl" >Team</h2>
+                        <p class="text-white font-Poppins uppercase font-bold text-2xl md:text-4xl" >we are talent of team</p>
+                    </div>
+                    <div class="flex flex-wrap m-auto mt-6 justify-around">
+                        <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
+                            <a href="#">
+                                <img src="/assets/images/team/raccoon.png" alt="team">
+                                <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">Jonah Van den Brand</h1>
+                                <p class="px-2 pb-2 text-secondary font-serif">Head engineer</p>
+                            </a>
+                        </div>
+                        <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
+                            <a href="#">
+                                <img src="/assets/images/team/mesmol.jpg" alt="team">
+                                <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">Guus Loccufier</h1>
+                                <p class="px-2 pb-2 text-secondary font-serif">Head engineer</p>
+                            </a>
+                        </div>
+                        <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
+                            <a href="#">
+                                <img src="/assets/images/team/GitHub-Chan.jpg" alt="team">
+                                <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">GitHub-Chan</h1>
+                                <p class="px-2 pb-2 text-secondary font-serif">Head of code</p>
+                            </a>
+                        </div>
+                        <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
+                            <a href="#">
+                                <img src="/assets/images/team/chatGPT-Chan.jpg" alt="team">
+                                <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">ChatGPT-Chan</h1>
+                                <p class="px-2 pb-2 text-secondary font-serif">Head of writing</p>
+                            </a>
+                        </div>
+                        <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
+                            <a href="#">
+                                <img src="/assets/images/team/sompie.jpg" alt="team">
+                                <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">Lord Sompie</h1>
+                                <p class="px-2 pb-2 text-secondary font-serif">Head of support</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="pt-16" id="news">
+                    <div class="section-title mb-4">
+                        <h2 class="text-secondary font-Poppins uppercase mb-1 md:text-2xl" >news</h2>
+                        <p class="text-white font-Poppins uppercase font-bold text-2xl md:text-4xl" >all the resent stuff</p>
+                    </div>
+                    <div class="flex flex-wrap m-auto mt-6 justify-around">
+                        <div class="overflow-clip min-w-[10rem] max-w-[20rem] m-2 bg-[#151515] h-fit rounded-md">
+                            <a href="#">
+                                <img src="/assets/images/sad haker.jpg" alt="sad haker">
+                                <h1 class="font-Raleway font-bold text-lg text-primary p-2 pb-1">IT dont do there work</h1>
+                                <p class="px-2 pb-2 text-secondary font-serif">it's a very sad tale.</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="pt-16" id="contact">
+                    <div class="section-title mb-4">
+                        <h2 class="text-secondary font-Poppins uppercase mb-1 md:text-2xl" >Contact</h2>
+                        <p class="text-white font-Poppins uppercase font-bold text-2xl md:text-4xl" >give me all your data</p>
+                    </div>
+                    <p class="font-serif text-secondary text-base md:text-xl" >Please fill in the form below to get in contact with us</p>
+
+                </section>
+            </div>
+        </main>
+        <footer class="relative bottom-0 bg-trueGray-900 text-gray-400 py-6">
+            <div class="container mx-auto flex justify-between items-center">
+              <div>
+                <h3 class="text-lg font-bold mb-2">RUBY</h3>
+                <p>Address: Kortrijksesteenweg 1025, 9051 Sint-Denijs-Westrem</p>
+                <p>Phone: 09 221 31 11</p>
+                <p>Email: teamruby@gmail.com</p>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold mb-2">Newsletter</h3>
+                <p>Would you like to receive news updates about the RUBY keyboard and future projects? Subscribe to our newsletter!</p>
+                <form class="mt-4">
+                  <input type="email" placeholder="Enter your email" class="bg-gray-800 text-gray-400 rounded py-2 px-4 focus:outline-none focus:shadow-outline w-full">
+                  <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-4">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </footer>
+        <script src="/src/js/main.js"></script>
+    </body>
+</html>
+
