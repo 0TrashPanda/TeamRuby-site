@@ -71,3 +71,7 @@ html {
     background-color: #5d5d5d;
     border-radius: 3px;
 }
+
+a {
+    @apply text-ruby;
+}
