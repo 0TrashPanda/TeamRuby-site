@@ -75,3 +75,7 @@ html {
 p a {
     @apply text-ruby;
 }
+
+.markright {
+    @apply mx-auto mt-16 mb-16 max-w-4xl prose prose-lg dark:prose-invert prose-headings:border-b prose-headings:p-4 prose-headings:pt-24 prose-headings:text-primary prose-p:text-secondary prose-p:font-serif prose-headings:font-Poppins prose-headings:uppercase prose-headings:font-bold;
+}

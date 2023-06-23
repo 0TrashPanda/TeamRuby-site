@@ -1,54 +1,444 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="/src/css/output.css" rel="stylesheet" />
-    </head>
-    <body class="text-primary bg-primary">
-        <nav class="text-white font-serif sticky top-0 z-50 font-medium text-xl h-0">
-            <div class="bg-black bg-opacity-80" id="navbar_full">
-                <div class="container px-3 mx-auto grid grid-cols-3 duration-200">
-                    <a href="../../src/html/index.html" class="font-semibold text-[2rem] md:h-fit my-auto col-span-1">RUBY<span class="text-ruby">.</span></a>
-                    <button id="expandButton" data-collapse-toggle="navbar-default" type="button" class="collapsed m-auto h-16 md:collapse focus:text-ruby" aria-controls="navbar-default" aria-expanded="false">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" shape-rendering="geometricPrecision" style="border-radius: 50%">
-                            <path id="arrow" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                        </svg>
-                    </button>
-                    <div class="flex justify-end h-fit my-auto col-span-1">
-                        <a class="m-auto mr-0 p-1 ring-2 ring-ruby rounded-lg duration-300 hover:text-ruby" href="../../src/html/projects.html">Projects</a>
-                    </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/css/output.css" rel="stylesheet" />
+</head>
+
+<body class="text-primary bg-primary">
+    <nav class="text-white font-serif sticky top-0 z-50 font-medium text-xl">
+        <div class="bg-black bg-opacity-80" id="navbar_full">
+            <div class="container px-3 mx-auto grid grid-cols-3 duration-200">
+                <a href="../../src/html/index.html"
+                    class="font-semibold text-[2rem] md:h-fit my-auto col-span-1">RUBY<span
+                        class="text-ruby">.</span></a>
+                <button id="expandButton" data-collapse-toggle="navbar-default" type="button"
+                    class="collapsed m-auto h-16 md:collapse focus:text-ruby" aria-controls="navbar-default"
+                    aria-expanded="false">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"
+                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                        shape-rendering="geometricPrecision" style="border-radius: 50%">
+                        <path id="arrow" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                    </svg>
+                </button>
+                <div class="flex justify-end h-fit my-auto col-span-1">
+                    <a class="m-auto mr-0 p-1 ring-2 ring-ruby rounded-lg duration-300 hover:text-ruby"
+                        href="../../src/html/projects.html">Projects</a>
                 </div>
             </div>
-            <div class="nav-hidden py-4 px-8 mt-20 bg-black bg-opacity-80 m-4 w-fit mx-auto rounded-lg origin-top duration-200 delay-75 md:bg-transparent md:absolute md:top-0 md:m-auto md:p-0 md:left-0 md:right-0 md:!scale-[1]" id="navbar-default">
-                <ul class="flex flex-col justify-center md:flex-row md:my-auto md:h-16 md:left-auto md:right-auto">
-                </ul>
-            </div>
-        </nav>
-            <main>
-                <div class="container flex flex-wrap m-auto mt-6 pt-20 px-2">
-                    <div class="stackedit">
-                        <div class="stackedit__left">
-                            <div class="stackedit__toc">
-                                <ul>
-                                    <li><a href="#extra-project-info">Extra project info</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="stackedit__right">
-                            <div class="stackedit__html">
-                                <h1 id="extra-project-info">Extra project info</h1>
-                                <p>In our quest to challenge the long-standing restrictions imposed by traditional typewriters, we embarked on the creation of a custom keyboard that breaks free from conventional design norms. Our vision materialized into a split ortholinear column-staggered ergonomic keyboard, equipped with a thumb cluster and shortcut keys. Using primarily from the Colemak layout, we developed a modified 69% layout that optimizes key placement for enhanced typing efficiency.</p>
-                                <p>Our shared passion for computers and coding fueled our motivation to embark on this project. Recognizing the significant amount of time we spend on our computers and the importance of comfortable typing experiences, we set out to create a keyboard tailored to our specific needs. Moreover, the inherent intrigue and challenge of the project enticed us to dive into the realm of keyboard design and customization.</p>
-                                <p>Early on, we established the layout for our keyboard, setting the foundation for subsequent development. We began creating a website to document our progress, continuously iterating and refining it along the way. Extensive research on both software and hardware components followed, guiding our decision-making process. With our knowledge and plans in place, we proceeded to order the necessary components and designed the PCB.</p>
-                                <p>The testing phase proved to be pivotal, as it allowed us to uncover various challenges and issues. We encountered delays in shipping, encountered a scented candle incident during the testing of the rotary encoder, and faced complications related to MOSFET selection. The Ergobleds presented unexpected voltage issues, and we discovered the need to address the I2C pins and IO expanders. Furthermore, a reversed pot LED and a poor 3V3 connection to the PCB demanded our attention. Additionally, we confronted the perplexing assignment of Wire1 and Wire0, a perplexing quirk of the Xiao RP2040.</p>
-                                <p>Throughout this journey, we found inspiration in Zack Friedman’s Mirage keyboard, drawing valuable insights from his informative videos. Furthermore, our decision to delve into learning the Colemak keyboard layout added a layer of enjoyment and personal growth to the project. With its hackable nature, our keyboard is designed to cater to the needs of those who appreciate tinkering and customization, offering limitless possibilities for adaptation and personalization.</p>
-                                <p>Looking ahead, we envision refining our software, introducing an array of features, and developing a user-friendly GUI to streamline the customization process. We are committed to providing a comprehensive software experience, complementing the hardware’s capabilities. Our ultimate aim is to create a versatile keyboard that caters to diverse user preferences while fostering a seamless and enjoyable typing experience.</p>
-                                <p>Through this project, we strive to challenge the status quo, infusing innovation and personalization into the realm of keyboard design. By pushing the boundaries and embracing the spirit of exploration, we aim to empower individuals to tailor their typing experience to their unique needs and preferences.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        <script src="/src/js/main.js"></script>
+        </div>
+        <div class="nav-hidden py-4 px-8 mt-20 bg-black bg-opacity-80 m-4 w-fit mx-auto rounded-lg origin-top duration-200 delay-75 md:bg-transparent md:absolute md:top-0 md:m-auto md:p-0 md:left-0 md:right-0 md:!scale-[1]"
+            id="navbar-default">
+            <ul class="flex flex-col justify-center md:flex-row md:my-auto md:h-16 md:left-auto md:right-auto">
+            </ul>
+        </div>
+    </nav>
+    <div class="sticky top-24">
+        <ul>
+            <li class=""><a class="block p-2 font-serif text-secondary text-base md:text-lg hover:bg-[#111] w-48" href="#project-intro">Project intro</a></li>
+            <li class=""><a class="block p-2 font-serif text-secondary text-base md:text-lg hover:bg-[#111] w-48" href="#extra-project-info">Extra project info</a></li>
+            <li class=""><a class="block p-2 font-serif text-secondary text-base md:text-lg hover:bg-[#111] w-48" href="#layout">Layout</a></li>
+            <li class=""><a class="block p-2 font-serif text-secondary text-base md:text-lg hover:bg-[#111] w-48" href="#hardware">Hardware</a></li>
+            <li class=""><a class="block p-2 font-serif text-secondary text-base md:text-lg hover:bg-[#111] w-48" href="#component-info">Component info</a></li>
+            <li class=""><a class="block p-2 font-serif text-secondary text-base md:text-lg hover:bg-[#111] w-48" href="#firmware">Firmware</a></li>
+            <li class=""><a class="block p-2 font-serif text-secondary text-base md:text-lg hover:bg-[#111] w-48" href="#code-flow">Code flow</a></li>
+            <li class=""><a class="block p-2 font-serif text-secondary text-base md:text-lg hover:bg-[#111] w-48" href="#software">Software</a></li>
+            <li class=""><a class="block p-2 font-serif text-secondary text-base md:text-lg hover:bg-[#111] w-48" href="#testing-phase">Testing phase</a></li>
+            <li class=""><a class="block p-2 font-serif text-secondary text-base md:text-lg hover:bg-[#111] w-48" href="#problems">Problems</a></li>
+            <li class=""><a class="block p-2 font-serif text-secondary text-base md:text-lg hover:bg-[#111] w-48" href="#conclusion">Conclusion</a></li>
+            <li class=""><a class="block p-2 font-serif text-secondary text-base md:text-lg hover:bg-[#111] w-48" href="#bibliography">Bibliography</a></li>
+            <li class=""><a class="block p-2 font-serif text-secondary text-base md:text-lg hover:bg-[#111] w-48" href="#attachments">Attachments</a></li>
+
+        </ul>
+    </div>
+    <main class="mt-[-40rem]">
+        <article class="markright">
+            <h1 id="project-intro">Project intro</h1>
+            <p>Introducing the Ruby Keyboard, a custom-made keyboard designed with ergonomics and efficiency in mind.
+                The Ruby Keyboard boasts a unique layout based on the popular Colemak design, which has been shown to
+                improve typing speed and reduce strain on the fingers and wrists. With a split configuration, the Ruby
+                Keyboard allows for a comfortable, natural typing position that reduces the risk of repetitive strain
+                injuries.</p>
+            <p>One of the standout features of the Ruby Keyboard is its modular design. The keyboard is designed with a
+                master-slave configuration, which means that it can be easily expanded with additional modules like a
+                numpad or media pad. This allows you to customize your workspace to suit your specific needs and
+                preferences, without sacrificing comfort or functionality.</p>
+            <p>At Team Ruby, we understand that a keyboard is more than just a tool for typing. It’s an extension of
+                your personality and an essential component of your work environment. That’s why we’ve designed the Ruby
+                Keyboard with aesthetics in mind, combining sleek, modern design with high-quality materials and
+                craftsmanship. Whether you’re a gamer, a programmer, or just someone who spends a lot of time typing,
+                the Ruby Keyboard is the perfect blend of form and function.</p>
+        </article>
+        <article class="markright">
+            <h1 id="extra-project-info">Extra project info</h1>
+            <p>In our quest to challenge the long-standing restrictions imposed by traditional typewriters, we embarked
+                on the creation of a custom keyboard that breaks free from conventional design norms. Our vision
+                materialized into a split ortholinear column-staggered ergonomic keyboard, equipped with a thumb cluster
+                and shortcut keys. Using primarily from the Colemak layout, we developed a modified 69% layout that
+                optimizes key placement for enhanced typing efficiency.</p>
+            <p>Our shared passion for computers and coding fueled our motivation to embark on this project. Recognizing
+                the significant amount of time we spend on our computers and the importance of comfortable typing
+                experiences, we set out to create a keyboard tailored to our specific needs. Moreover, the inherent
+                intrigue and challenge of the project enticed us to dive into the realm of keyboard design and
+                customization.</p>
+            <p>Early on, we established the layout for our keyboard, setting the foundation for subsequent development.
+                We began creating a website to document our progress, continuously iterating and refining it along the
+                way. Extensive research on both software and hardware components followed, guiding our decision-making
+                process. With our knowledge and plans in place, we proceeded to order the necessary components and
+                designed the PCB.</p>
+            <p>The testing phase proved to be pivotal, as it allowed us to uncover various challenges and issues. We
+                encountered delays in shipping, encountered a scented candle incident during the testing of the rotary
+                encoder, and faced complications related to MOSFET selection. The Ergobleds presented unexpected voltage
+                issues, and we discovered the need to address the I2C pins and IO expanders. Furthermore, a reversed pot
+                LED and a poor 3V3 connection to the PCB demanded our attention. Additionally, we confronted the
+                perplexing assignment of Wire1 and Wire0, a perplexing quirk of the Xiao RP2040.</p>
+            <p>Throughout this journey, we found inspiration in Zack Friedman’s Mirage keyboard, drawing valuable
+                insights from his informative videos. Furthermore, our decision to delve into learning the Colemak
+                keyboard layout added a layer of enjoyment and personal growth to the project. With its hackable nature,
+                our keyboard is designed to cater to the needs of those who appreciate tinkering and customization,
+                offering limitless possibilities for adaptation and personalization.</p>
+            <p>Looking ahead, we envision refining our software, introducing an array of features, and developing a
+                user-friendly GUI to streamline the customization process. We are committed to providing a comprehensive
+                software experience, complementing the hardware’s capabilities. Our ultimate aim is to create a
+                versatile keyboard that caters to diverse user preferences while fostering a seamless and enjoyable
+                typing experience.</p>
+            <p>Through this project, we strive to challenge the status quo, infusing innovation and personalization into
+                the realm of keyboard design. By pushing the boundaries and embracing the spirit of exploration, we aim
+                to empower individuals to tailor their typing experience to their unique needs and preferences.</p>
+        </article>
+        <article class="markright">
+            <h1 id="layout">Layout</h1>
+            <p>Naturally, we didn’t just pull this layout out of our asses, we spent a considerable amount of time on
+                designing this layout</p>
+            <p><img src="https://media.discordapp.net/attachments/853949355945361419/1110134320137519104/image.png?width=1065&amp;height=443"
+                    alt="enter image description here"></p>
+            <h2 id="why-colemak">Why colemak</h2>
+            <p>I’ve always found the AZERTY layout (which is the default layout in Belgium) accessibly hideous. The
+                symbol layer is just absolute garbage. And who in their right mind would like to type symbols over
+                numbers. It’s called a number row for a reason… My frustrations with this layout went to the extent I
+                learned qwerty a couple years ago. I have been using that as my daily driver till a little more than a
+                year ago when I searched for something even better. This is also when I stumbled onto colemak. This
+                powerhouse of a layout makes typing very fast and efficient because it puts the most used keys in easy
+                accessible spots like the home row. While keeping the most common shortcut keys in the same place (CTRL
+                A, Z, X, C, V). It also only moves 2 keys between hands (p and e) and it puts the most typed keys on the
+                strongest fingers. All of this goodness makes it so that your fingers move 2.2 times less than on
+                qwerty, have 16 times less row jumping and there are 35 times more words you can type only using the
+                home row. It’s also the 3rd most common layout in the world and has a thriving community of people that
+                make “tweaks” of the layout to suit any of your special needs.</p>
+            <p><img src="https://i1.wp.com/farm8.staticflickr.com/7003/6554340969_bb2d63372d_z.jpg"
+                    alt="KeyboardHeatmaps"></p>
+        </article>
+        <article class="markright">
+            <h1 id="hardware">Hardware</h1>
+            <p>Our year project involves building a custom keyboard from the ground up, starting with the hardware. The
+                first step was selecting the various components we needed to create a functional keyboard. We began by
+                choosing a microcontroller, settling on the Seeed Studio XIAO RP2040. This microcontroller was selected
+                for its low cost and compatibility with a wide range of programming languages. We acquired it from
+                SeeedStudio for €5.43.</p>
+            <p>To expand the I/O capabilities of the microcontroller, we also added an I/O expander - the NXP Semicon
+                PCA9555PW,118 - which we acquired from lcsc for €0.74. We also added reverse mount LED lights (SK6812
+                MINI-E) from AliExpress, costing €5.85 for 100 pieces, as well as Gateron yellow Pro switches (220
+                pieces) for €49.74 from AliExpress.</p>
+            <p>Other components we included in the hardware were rotary encoders (EC12SXB2) from AliExpress, hot-swap
+                sockets (CPG151101S11) from AliExpress, a headphone jack (PJ-313B6-B) from lcsc, capacitors
+                (CL05B104KO5NNNC) from lcsc, and resistors (RC0402FR-0710KL) from lcsc. We acquired 5 PCBs from jlcpcb
+                for €15.00. To complete the hardware, we designed and 3D printed the case and key caps, which cost
+                €10.00 each.</p>
+            <p>With shipping costs, the total cost of the board was approximately €80. Our objective was to create a
+                keyboard that was both affordable and functional, and we believe we have achieved this goal by carefully
+                selecting the components and ensuring compatibility between them. You can check all the components in
+                the table below.</p>
+            <p><strong>Hardware Table:</strong></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>part</th>
+                        <th>type</th>
+                        <th>acquisition</th>
+                        <th>price</th>
+                        <th>amt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Seeed Studio XIAO RP2040</td>
+                        <td>microcontroller</td>
+                        <td>SeeedStudio</td>
+                        <td>€ 5.43</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>NXP Semicon PCA9555PW,118</td>
+                        <td>I/O Expander</td>
+                        <td>lcsc</td>
+                        <td>€ 0.74</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>SK6812 MINI-E</td>
+                        <td>reverse mount led</td>
+                        <td>AliExpress</td>
+                        <td>€ 5.85</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Gateron yellow Pro switch 3pin</td>
+                        <td>Key Switches</td>
+                        <td>AliExpress</td>
+                        <td>€ 49.74</td>
+                        <td>220</td>
+                    </tr>
+                    <tr>
+                        <td>EC12SXB2</td>
+                        <td>Rotary encoder</td>
+                        <td>AliExpress</td>
+                        <td>€ 2.43</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>CPG151101S11</td>
+                        <td>Hot-Swap Socket</td>
+                        <td>AliExpress</td>
+                        <td>€ 12.28</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>case</td>
+                        <td>case</td>
+                        <td>3D print</td>
+                        <td>€ 10.00</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>key caps</td>
+                        <td>key caps</td>
+                        <td>3D print</td>
+                        <td>€ 10.00</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>PCB</td>
+                        <td>PCB</td>
+                        <td>jlcpcb</td>
+                        <td>€ 15.00</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>PJ-313B6-B</td>
+                        <td>3.5 mm headphone jack</td>
+                        <td>lcsc</td>
+                        <td>€ 0.12</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>CL05B104KO5NNNC</td>
+                        <td>Capacitor</td>
+                        <td>lcsc</td>
+                        <td>€ 0.70</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>RC0402FR-0710KL</td>
+                        <td>Resistor</td>
+                        <td>lcsc</td>
+                        <td>€ 0.60</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>MOSFET</td>
+                        <td>lcsc</td>
+                        <td>€ 0.??</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 id="board-total-with-shipping--€-80"><strong>1 Board total with shipping: ~ € 80</strong></h3>
+        </article>
+        <article class="markright">
+            <h1 id="component-info">Component info</h1>
+            <h3 id="seeed-studio-xiao-rp2040">1. Seeed Studio XIAO RP2040:</h3>
+            <p>The Seeed Studio XIAO RP2040 is a compact microcontroller featuring the powerful RP2040 processor with
+                dual-core ARM architecture, 2 I2C interfaces, and 2 MB flash memory. Despite its limited number of I/O
+                pins, it can be easily expanded using I/O expanders.</p>
+            <h3 id="nxp-semicon-pca9555pw118">2. NXP Semicon PCA9555PW,118:</h3>
+            <p>The NXP Semicon PCA9555PW,118 is a hand solderable I/O expander that provides 16 additional pins per
+                expander. It offers fast and reliable performance, with a dedicated pin that is triggered when an input
+                is activated.</p>
+            <h3 id="sk6812-mini-e">3. SK6812 MINI-E:</h3>
+            <p>The SK6812 MINI-E is a bright and compact reverse-mount LED. Its unique design allows it to be positioned
+                beneath even the lowest-profile key switches. These LEDs are cost-effective and easily controllable
+                using the Neopixel library.</p>
+            <h3 id="gateron-yellow-pro-switch-3pin">4. Gateron yellow Pro switch 3pin:</h3>
+            <p>Gateron yellow Pro switches were chosen for their affordability and high-quality typing experience.
+                Lubing the switches can further enhance the overall feel and performance.</p>
+            <h3 id="ec12sxb2">5. EC12SXB2:</h3>
+            <p>The EC12SXB2 rotary encoder was selected for its compatibility with the keyboard’s mounting holes and its
+                cost-effectiveness. It also includes a built-in button for additional functionality.</p>
+            <h3 id="cpg151101s11">6. CPG151101S11:</h3>
+            <p>The CPG151101S11 hot-swap sockets enable the use of various switch types, including Choc and Cherry style
+                switches. This feature allows for easy “hot-swapping” of keys without desoldering.</p>
+            <h3 id="case-and-key-caps">7. Case and Key caps:</h3>
+            <p>The keyboard’s case and key caps are custom-designed and 3D-printed, providing a personalized aesthetic.
+                A separate keycap set was purchased due to the complexity of printing key caps and the availability of
+                visually appealing options.</p>
+            <h3 id="pcb">8. PCB:</h3>
+            <p>The PCB (Printed Circuit Board) plays a crucial role in the keyboard’s construction and circuitry. JLCPCB
+                was chosen as the manufacturer for their reliable PCB fabrication services.</p>
+            <h3 id="pj-313b6-b">9. PJ-313B6-B:</h3>
+            <p>The PJ-313B6-B headphone jack serves as a connector between the two halves of the split keyboard. This
+                widely used and cost-effective connector facilitates the seamless connection of the keyboard halves.</p>
+            <h3 id="cl05b104ko5nnnc">10. CL05B104KO5NNNC:</h3>
+            <p>They are used to stabilize the +5V and +3.3V power lines, ensuring smooth and consistent voltage supply.
+            </p>
+            <h3 id="rc0402fr-0710kl">11. RC0402FR-0710KL:</h3>
+            <p>Used as pull-up resistors for I2C communication and data signals for the LEDs. The resistor values we
+                used are commonly used values for i2c and data pull-up (10k) a high value means there isn’t a lot of
+                current going through them.</p>
+            <h3 id="mosfet">12. MOSFET:</h3>
+            <p>The MOSFET is utilized to boost the data signal from 3.3V to 5V, which is the operating voltage for the
+                LEDs. The chosen MOSFET provides fast switching performance, is readily available, and can be easily
+                mounted using surface mount technology (SMD).</p>
+
+        </article>
+        <article class="markright">
+            <h1 id="firmware">Firmware</h1>
+            <p>For our custom keyboard project, we are currently using Arduino as our development platform for the
+                firmware. We chose Arduino because of its simplicity and ease of use, as well as the availability of
+                libraries specifically designed for the Seeed Studio XIAO microcontroller. Additionally, the Arduino
+                code we’re using compiles to UF2, which makes it easy to flash onto the microcontroller.</p>
+            <p>However, we are also considering alternative firmware options for future iterations of our project. One
+                promising candidate is the ZMK (Zephyr for Mechanical Keyboards) firmware. ZMK offers a comprehensive
+                set of pre-existing functions and features, potentially eliminating the need to develop certain
+                functionalities from scratch. Additionally, ZMK has good compatibility with many different types of
+                keyboards and operating systems, which would be beneficial if we wanted to make the keyboard more
+                accessible to a wider range of users.</p>
+            <p>Another possibility we are exploring is transitioning to a different programming language such as C++ or
+                Rust for firmware development. Switching to these languages could offer benefits such as cleaner code
+                structure and improved performance, making the firmware more efficient and responsive.</p>
+            <p>At this moment, while we continue to use Arduino, we are actively evaluating the advantages and
+                trade-offs of ZMK and different programming languages. We aim to select the best-fit solution for our
+                project based on factors such as functionality, ease of development, compatibility with various
+                operating systems, and overall code quality.</p>
+            <p>Regardless of which development platform we ultimately choose, our objective is to create a firmware that
+                is programmable, customizable, and compatible with a variety of different operating systems. We want to
+                ensure that our custom keyboard is easy to use and can be tailored to the specific needs of each user
+            </p>
+        </article>
+        <article class="markright">
+            <h1 id="code-flow">Code flow</h1>
+        </article>
+        <article class="markright">
+            <h1 id="software">Software</h1>
+            <p>For code development, we primarily use Visual Studio Code (VS Code) due to its open-source nature and the
+                availability of numerous high-quality extensions. However, we occasionally resort to the Arduino editor
+                when encountering issues with compiling our Arduino code.</p>
+            <p>We also wish to make a software component for our custom keyboard project. It involves developing an
+                application that runs on a PC and interacts with the firmware on the microcontroller. Our aim is to
+                create a user-friendly software interface that allows users to customize key mappings, lighting effects,
+                macros, and even configure the behavior of the extra shortcut/macro buttons on the keyboard based on the
+                currently active application on the PC.</p>
+            <p>To achieve this, we are considering developing the software application using the Rust programming
+                language. While we acknowledge that our proficiency in Rust is still developing, this project presents
+                an excellent opportunity for us to deepen our understanding and expertise in this language. Rust’s
+                performance, memory safety, and clean code structure align well with our objectives for the software.
+            </p>
+            <p>One of the main functionalities of the software application will be to provide a graphical user interface
+                (GUI) through which users can intuitively customize their keyboard settings. This includes a detailed
+                setup wizard, installation guide and a build guide for new users</p>
+        </article>
+        <article class="markright">
+            <h1 id="testing-phase">Testing phase</h1>
+            <p>During the testing phase of our project, our primary objective was to thoroughly evaluate and validate
+                the functionality of all components involved in the creation of our custom keyboard. The aim was to
+                identify and address any issues or challenges before ordering the official version of the PCB, ensuring
+                a smooth and successful implementation.</p>
+            <p>We conducted comprehensive testing for all the components required for the full keyboard, covering both
+                their standalone functionality and their integration within the PCB. To facilitate testing, we utilized
+                various tools and equipment, including a multimeter, an oscilloscope, extra components, breadboards, and
+                a soldering iron.</p>
+            <p>Throughout this critical phase, we encountered several challenges that required our attention and
+                problem-solving skills. These challenges included shipping delays, the unexpected scented candle
+                incident, MOSFET related issues, problems with the Ergobleds, issues with the I2C pins and IO expanders,
+                a reversed encoder LED, a poor 3V3 connection to the PCB, and the confusing wire assignments of Wire1
+                and Wire0. You will read about our issues in detail in the next section of our documentation.</p>
+            <p>Despite these challenges, the testing phase proved to be one of the most significant and time-consuming
+                aspects of our project. It allowed us to thoroughly assess the performance and compatibility of our
+                components, identify potential areas for improvement, and refine the PCB design to address the
+                discovered problems. By investing considerable time and effort in testing, we aimed to minimize any
+                unforeseen surprises and ensure that our final version of the keyboard would meet our desired
+                specifications and functionality.</p>
+            <p>Overall, the testing phase played a crucial role in the development and refinement of our project. It
+                provided us with valuable insights, troubleshooting opportunities, and the opportunity to make informed
+                decisions to enhance the overall quality and performance of our custom keyboard.</p>
+        </article>
+        <article class="markright">
+            <h1 id="problems">Problems</h1>
+            <h3 id="shipping-problems">1. Shipping problems:</h3>
+            <p>The initial shipping delay of the PCBs caused a significant setback in our project timeline, resulting in
+                the inability to test various components and overall project delays.</p>
+            <h3 id="scented-candle">2. Scented candle:</h3>
+            <p>During the initial testing of the rotary encoder, due to the default program loaded on the Seeed Studio
+                XIAO RP2040, the pins connected to the encoder outputs started emitting a burning smell. This led to a
+                humorous reference to it as our “scented candle.” Surprisingly, the rotary encoder still functioned
+                correctly once we uploaded the appropriate program.</p>
+            <h3 id="mosfet">3. MOSFET:</h3>
+            <p>Accidentally forgetting to order the MOSFET initially required improvisation. We utilized a MOSFET we had
+                on hand and adjusted the resistor values to ensure proper functionality. The MOSFET was necessary to
+                convert the 3.3V data signal to 5V.</p>
+            <h3 id="ergobleds">4. Ergobleds:</h3>
+            <p>Apart from the MOSFET issue, we encountered a steady 5V on the data line of the Ergobleds, which was
+                unexpected. After extensive troubleshooting, we discovered that a LED was inserted into its socket
+                rotated by 180 degrees. This discrepancy was missed during the PCB design phase. We rectified the issue
+                in the subsequent PCB revision by ensuring the correct orientation of the LED used for the encoder.</p>
+            <h3 id="bad-3v3-connection-to-pcb">5. Bad 3V3 connection to PCB:</h3>
+            <p>The pads on which the XIAO was soldered turned out to be slightly smaller than ideal, resulting in a poor
+                3.3V connection. This issue also impacted the proper functioning of the LEDs. In the subsequent PCB
+                revision, we addressed this problem by adjusting the pad size.</p>
+            <h3 id="wire1--wire0--wire1">6. Wire1 = Wire0 =! Wire1:</h3>
+            <p>A frustrating challenge we encountered was the ambiguity surrounding the I2C interfaces of the XIAO
+                RP2040. While the default I2C interface is located on pins D4 and D5, corresponding to processor pins 6
+                and 7 (I2C1), it is unexpectedly referred to as “Wire0.” This discrepancy can cause confusion since the
+                RP2040 offers two I2C interfaces, accessible from multiple pins. To utilize I2C on specific pins (D2-3
+                or P28-29 connected to I2C1 and D8-10 or P2-3 connected to I2C0), we had to use “Wire0” and “Wire1,”
+                respectively. Unfortunately, this information was not clearly documented on the official website</p>
+        </article>
+        <article class="markright">
+            <h1 id="conclusion">Conclusion</h1>
+            <p>In conclusion, the Ruby Keyboard is an innovative and customizable keyboard that enhances your typing
+                experience. Its ergonomic split configuration and modular design provide a comfortable, efficient, and
+                personalized typing experience that sets it apart from ordinary keyboards.</p>
+        </article>
+        <article class="markright">
+            <h1 id="bibliography">Bibliography</h1>
+            <blockquote>
+                <p>Written with <a href="https://stackedit.io/">StackEdit</a><br>
+                    Co written by ChatGPT <a href="https://chat.openai.com/">https://chat.openai.com/</a></p>
+            </blockquote>
+            <blockquote>
+                <p>Introduction to ZMK | ZMK Firmware. (z.d.). <a
+                        href="https://zmk.dev/docs">https://zmk.dev/docs</a><br>
+                    Zack Freedman. (z.d.). <a
+                        href="https://www.youtube.com/@ZackFreedman/videos">https://www.youtube.com/@ZackFreedman/videos</a><br>
+                    Seeed Studio Wiki. (2023, 11 januari). <a
+                        href="https://wiki.seeedstudio.com/XIAO-RP2040">https://wiki.seeedstudio.com/XIAO-RP2040</a><br>
+                    Philhower, E., III. (z.d.). RP2040 Arduino core. <a
+                        href="https://github.com/earlephilhower/arduino-pico">https://github.com/earlephilhower/arduino-pico</a>
+                </p>
+            </blockquote>
+        </article>
+        <article class="markright">
+            <h1 id="attachments">Attachments</h1>
+            <p>File: [Titelpagina](C:\Users\thetr\Documents\Schooljaar 2022 2023\NEDERLANS\dossier
+                GIP\titelpagina.pdf)<br>
+                File: [Woord vooraf](C:\Users\thetr\Documents\Schooljaar 2022 2023\NEDERLANS\dossier
+                GIP\woordvooraf.pdf)
+            </p>
+        </article>
+    </main>
+    <script src="/src/js/main.js"></script>
+
 </html>
