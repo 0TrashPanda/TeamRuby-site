@@ -698,6 +698,14 @@ video {
   margin-top: 3rem;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -770,6 +778,18 @@ video {
 
 .max-w-\[20rem\] {
   max-width: 20rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .origin-top {
