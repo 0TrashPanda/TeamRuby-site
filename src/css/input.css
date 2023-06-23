@@ -72,6 +72,6 @@ html {
     border-radius: 3px;
 }
 
-a {
+p a {
     @apply text-ruby;
 }

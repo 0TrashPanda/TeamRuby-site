@@ -1,2 +1,5 @@
-# Start a watcher
+# Start a watcher with npx
 npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch
+
+# Start a watcher with tailwind exe
+.\tailwindcss.exe -i ./src/css/input.css -o ./src/css/output.css --watch
