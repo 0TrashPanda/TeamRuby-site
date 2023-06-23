@@ -9,7 +9,7 @@
         <nav class="text-white font-serif sticky top-0 z-50 font-medium text-xl h-0">
             <div class="bg-black bg-opacity-80" id="navbar_full">
                 <div class="container px-3 mx-auto grid grid-cols-3 duration-200">
-                    <a href="index.html" class="font-semibold text-[2rem] md:h-fit my-auto col-span-1">RUBY<span class="text-ruby">.</span></a>
+                    <a href="#" class="font-semibold text-[2rem] md:h-fit my-auto col-span-1">RUBY<span class="text-ruby">.</span></a>
                     <button id="expandButton" data-collapse-toggle="navbar-default" type="button" class="collapsed m-auto h-16 md:collapse focus:text-ruby" aria-controls="navbar-default" aria-expanded="false">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" shape-rendering="geometricPrecision" style="border-radius: 50%">
                             <path id="arrow" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
@@ -29,16 +29,19 @@
                 </ul>
             </div>
         </nav>
-        <main class="relative mb-32">
-            <div class="container mx-auto duration-200 px-2">
-                <section class="h-screen relative p-8 pt-24" id="start">
-                    <img class="mx-auto mb-6 md:mb-8 h-[40vh] md:h-96" src="/assets/logo's/RUBY logo thicc.png" alt="RUBY logo">
-                    <h1 class="px-4 font-Poppins text-6xl md:text-8xl mx-auto w-fit">RUBY</h1>
-                    <h2 class="px-4 font-Poppins text-2xl md:text-4xl mx-auto w-fit mt-12 text-center">We are team of talented engineers<span class="text-ruby">.</span></h2>
-                    <div class="absolute bottom-0 m-auto left-0 right-0 text-center mb-8">
-                        <a href="#about" class="text-4xl text-ruby">⌄</a>
-                    </div>
-                </section>
+        <div>
+            <img class="object-cover h-screen w-screen bg-black" src="https://images.unsplash.com/photo-1524234107056-1c1f48f64ab8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="keybord">
+            <div class="absolute top-[10%] w-full text-center">
+                <img class="mx-auto mb-6 md:mb-8 h-[40vh] md:h-96" src="/assets/logo's/RUBY logo thicc.png" alt="RUBY logo">
+                <h1 class="text-9xl text-primary font-bold font-serif capitalize tracking-[1rem]">TEAM RUBY</h1><br>
+                <span class="text-3xl text-primary font-bold font-serif capitalize tracking-widest">guus - jonah</span>
+                <div class="absolute top-[130%] w-full text-center mb-8">
+                    <a href="#about" class="text-4xl text-ruby">⌄</a>
+                </div>
+            </div>
+        </div>
+        <main class="mb-32">
+            <div class="container mx-auto duration-200 px-2 relative top-0">
                 <section class="pt-24" id="about">
                     <div class="section-title mb-4">
                         <h2 class="text-secondary font-Poppins uppercase mb-1 md:text-2xl" >About</h2>
@@ -119,7 +122,7 @@
                 </section>
             </div>
         </main>
-        <footer class="bg-gray-900 text-gray-400 py-6">
+        <footer class="relative bottom-0 bg-gray-900 text-gray-400 py-6">
             <div class="container mx-auto flex justify-between items-center">
               <div>
                 <h3 class="text-lg font-bold mb-2">RUBY</h3>
@@ -138,5 +141,6 @@
             </div>
           </footer>
         <script src="/src/js/main.js"></script>
+    </body>
 </html>
 
