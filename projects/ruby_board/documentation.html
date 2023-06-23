@@ -9,14 +9,14 @@
         <nav class="text-white font-serif sticky top-0 z-50 font-medium text-xl h-0">
             <div class="bg-black bg-opacity-80" id="navbar_full">
                 <div class="container px-3 mx-auto grid grid-cols-3 duration-200">
-                    <a href="index.html" class="font-semibold text-[2rem] md:h-fit my-auto col-span-1">RUBY<span class="text-ruby">.</span></a>
+                    <a href="../../src/html/index.html" class="font-semibold text-[2rem] md:h-fit my-auto col-span-1">RUBY<span class="text-ruby">.</span></a>
                     <button id="expandButton" data-collapse-toggle="navbar-default" type="button" class="collapsed m-auto h-16 md:collapse focus:text-ruby" aria-controls="navbar-default" aria-expanded="false">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" shape-rendering="geometricPrecision" style="border-radius: 50%">
                             <path id="arrow" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                         </svg>
                     </button>
                     <div class="flex justify-end h-fit my-auto col-span-1">
-                        <a class="m-auto mr-0 p-1 ring-2 ring-ruby rounded-lg duration-300 hover:text-ruby" href="projects.html">Projects</a>
+                        <a class="m-auto mr-0 p-1 ring-2 ring-ruby rounded-lg duration-300 hover:text-ruby" href="../../src/html/projects.html">Projects</a>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,27 @@
         </nav>
             <main>
                 <div class="container flex flex-wrap m-auto mt-6 pt-20 px-2">
-                    tst
+                    <div class="stackedit">
+                        <div class="stackedit__left">
+                            <div class="stackedit__toc">
+                                <ul>
+                                    <li><a href="#extra-project-info">Extra project info</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="stackedit__right">
+                            <div class="stackedit__html">
+                                <h1 id="extra-project-info">Extra project info</h1>
+                                <p>In our quest to challenge the long-standing restrictions imposed by traditional typewriters, we embarked on the creation of a custom keyboard that breaks free from conventional design norms. Our vision materialized into a split ortholinear column-staggered ergonomic keyboard, equipped with a thumb cluster and shortcut keys. Using primarily from the Colemak layout, we developed a modified 69% layout that optimizes key placement for enhanced typing efficiency.</p>
+                                <p>Our shared passion for computers and coding fueled our motivation to embark on this project. Recognizing the significant amount of time we spend on our computers and the importance of comfortable typing experiences, we set out to create a keyboard tailored to our specific needs. Moreover, the inherent intrigue and challenge of the project enticed us to dive into the realm of keyboard design and customization.</p>
+                                <p>Early on, we established the layout for our keyboard, setting the foundation for subsequent development. We began creating a website to document our progress, continuously iterating and refining it along the way. Extensive research on both software and hardware components followed, guiding our decision-making process. With our knowledge and plans in place, we proceeded to order the necessary components and designed the PCB.</p>
+                                <p>The testing phase proved to be pivotal, as it allowed us to uncover various challenges and issues. We encountered delays in shipping, encountered a scented candle incident during the testing of the rotary encoder, and faced complications related to MOSFET selection. The Ergobleds presented unexpected voltage issues, and we discovered the need to address the I2C pins and IO expanders. Furthermore, a reversed pot LED and a poor 3V3 connection to the PCB demanded our attention. Additionally, we confronted the perplexing assignment of Wire1 and Wire0, a perplexing quirk of the Xiao RP2040.</p>
+                                <p>Throughout this journey, we found inspiration in Zack Friedman’s Mirage keyboard, drawing valuable insights from his informative videos. Furthermore, our decision to delve into learning the Colemak keyboard layout added a layer of enjoyment and personal growth to the project. With its hackable nature, our keyboard is designed to cater to the needs of those who appreciate tinkering and customization, offering limitless possibilities for adaptation and personalization.</p>
+                                <p>Looking ahead, we envision refining our software, introducing an array of features, and developing a user-friendly GUI to streamline the customization process. We are committed to providing a comprehensive software experience, complementing the hardware’s capabilities. Our ultimate aim is to create a versatile keyboard that caters to diverse user preferences while fostering a seamless and enjoyable typing experience.</p>
+                                <p>Through this project, we strive to challenge the status quo, infusing innovation and personalization into the realm of keyboard design. By pushing the boundaries and embracing the spirit of exploration, we aim to empower individuals to tailor their typing experience to their unique needs and preferences.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         <script src="/src/js/main.js"></script>
